@@ -7,13 +7,13 @@ import java.nio.file.Paths;
 
 public class Launch {
 
-    public static void main(String[] args) {
-        String fileName = args.length > 0 ? args[0] : "/home/killermenpl/dev/lang/test";
+	public static void main(String[] args) {
+		String fileName = args.length > 0 ? args[0] : "/home/killermenpl/dev/lang/test";
 
-        Path path = Paths.get(fileName);
+		Path path = Paths.get(fileName);
 
-        var parser = new Parser(path);
+		var parser = new Parser(path);
 
-        parser.parse().run();
-    }
+		parser.parse().run();
+	}
 }

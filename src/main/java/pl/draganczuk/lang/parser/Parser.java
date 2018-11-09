@@ -11,31 +11,31 @@ import java.util.Stack;
 import java.util.stream.Stream;
 
 public class Parser {
-    private Path path;
+	private Path path;
 
-    private ArrayList<Command> commands = new ArrayList<>();
-    private Stack<Command> commandStack = new Stack<>();
+	private ArrayList<Command> commands = new ArrayList<>();
+	private Stack<Command> commandStack = new Stack<>();
 
-    public static HashMap<String, Function> functions = new HashMap<>();
+	public static HashMap<String, Function> functions = new HashMap<>();
 
-    public Parser(Path path){
-        this.path = path;
-    }
+	public Parser(Path path){
+		this.path = path;
+	}
 
-    public Runnable parse(){
-        try (Stream<String> lines = Files.lines(this.path)) {
-            lines.forEachOrdered( line -> {
+	public Runnable parse(){
+		try (Stream<String> lines = Files.lines(this.path)) {
+			lines.forEachOrdered( line -> {
 
 
 
-            });
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+			});
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 
-        return () -> {
-            commands.forEach(Command::run);
-        };
-    }
+		return () -> {
+			commands.forEach(Command::run);
+		};
+	}
 }
 

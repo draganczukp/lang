@@ -7,11 +7,11 @@
  */
 
 plugins {
-    // Apply the java plugin to add support for Java
-    id 'java'
+	// Apply the java plugin to add support for Java
+	id 'java'
 
-    // Apply the application plugin to add support for building an application
-    id 'application'
+	// Apply the application plugin to add support for building an application
+	id 'application'
 }
 
 // Define the main class for the application
@@ -25,7 +25,7 @@ dependencies {
 
 // In this section you declare where to find the dependencies of your project
 repositories {
-    // Use jcenter for resolving your dependencies.
-    // You can declare any Maven/Ivy/file repository here.
-    jcenter()
+	// Use jcenter for resolving your dependencies.
+	// You can declare any Maven/Ivy/file repository here.
+	jcenter()
 }
