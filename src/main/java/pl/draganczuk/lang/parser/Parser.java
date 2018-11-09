@@ -18,18 +18,18 @@ public class Parser {
 
 	public static HashMap<String, Function> functions = new HashMap<>();
 
-	public Parser(Path path){
+	public Parser(Path path) {
 		this.path = path;
 	}
 
-	public Runnable parse(){
-		try (Stream<String> lines = Files.lines(this.path)) {
+	public Runnable parse() {
+		try(Stream<String> lines = Files.lines(this.path)) {
 			lines.forEachOrdered( line -> {
 
 
 
 			});
-		} catch (IOException e) {
+		}catch (IOException e) {
 			e.printStackTrace();
 		}
 

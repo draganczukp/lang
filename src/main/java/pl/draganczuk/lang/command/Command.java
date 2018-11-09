@@ -3,7 +3,7 @@ package pl.draganczuk.lang.command;
 public abstract class Command {
 	private String command;
 
-	public Command(String command){
+	public Command(String command) {
 		this.command = command;
 	}
 

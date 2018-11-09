@@ -11,10 +11,10 @@ public abstract class Function extends Command {
 	public static final HashMap<String, Function> functions = new HashMap<>();
 
 	static {
-		new Function("println", Type.types.get("void"), Type.types.get("any")){
+		new Function("println", Type.types.get("void"), Type.types.get("any")) {
 			@Override
 			public Object run(Object ...params) {
-				for(var p : params){
+				for(var p : params) {
 					System.out.print(p);
 				}
 				System.out.println();
