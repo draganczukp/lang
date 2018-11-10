@@ -25,9 +25,7 @@ public class Parser {
 	public Runnable parse() {
 		try(Stream<String> lines = Files.lines(this.path)) {
 			lines.forEachOrdered( line -> {
-
-
-
+				Token token = Token.getToken(line);
 			});
 		}catch (IOException e) {
 			e.printStackTrace();
